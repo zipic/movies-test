@@ -1,4 +1,10 @@
-
+.App {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  flex-shrink: 0;
+}
 @font-face {
   font-family: 'Embed';
   src: url('/public/fonts/Unbounded-VariableFont_wght.ttf');

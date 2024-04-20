@@ -7,6 +7,7 @@ import { HashRouter, Route, Routes } from 'react-router-dom';
 import CardDetails from './components/cardDetails/CardDetails';
 import Favorite from './components/favorites/Favorite';
 import './App.css';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path='/:id' element={<CardDetails />}/>
           <Route path='/favorites' element={<Favorite />} />
         </Routes>
-        
+        <Footer/>
       </div>
       </Provider>
     </HashRouter>
