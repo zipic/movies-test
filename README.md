@@ -1,5 +1,9 @@
 # Movies-app
 
+## Live Demo
+
+Check out the live demo [here](https://zipic.github.io/movies-test).
+
 ## Description
 Movies-app is an application for organizing and managing a movie list. 
 Users are given the opportunity to view information about movies, add them to their favorite list,
