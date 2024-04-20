@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/movies-test/static/css/main.e809ce3a.css",
+    "main.js": "/movies-test/static/js/main.b495584a.js",
+    "static/js/453.252cee70.chunk.js": "/movies-test/static/js/453.252cee70.chunk.js",
+    "static/media/Unbounded-VariableFont_wght.ttf": "/movies-test/static/media/Unbounded-VariableFont_wght.f609e6853a60ba1285b6.ttf",
+    "index.html": "/movies-test/index.html",
+    "main.e809ce3a.css.map": "/movies-test/static/css/main.e809ce3a.css.map",
+    "main.b495584a.js.map": "/movies-test/static/js/main.b495584a.js.map",
+    "453.252cee70.chunk.js.map": "/movies-test/static/js/453.252cee70.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e809ce3a.css",
+    "static/js/main.b495584a.js"
+  ]
+}
