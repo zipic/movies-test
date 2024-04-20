@@ -1,0 +1,126 @@
+.movies {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  padding: 50px;
+  gap: 50px;
+
+
+  @media screen and (min-width: 705px) and (max-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 705px) {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 330px;
+  height: 100%;
+  border-radius : 12px;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__image {
+    margin-top: 5px;
+    width: 310px;
+    min-height: 300px;
+    max-height: 300px;
+    object-fit: inherit;
+    border-radius: 12px;
+    filter: drop-shadow(10px 10px 10px #000);
+  }
+
+
+  &__title,
+  &__date,
+  &__rating {
+    max-width: 300px;
+    text-align: start;
+    overflow: auto;
+    word-break: break-word;
+    font-family: Embed, sans-serif;
+    font-size: 15px;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items:stretch;
+  gap: 20px;
+  filter: drop-shadow(10px 10px 10px #000);
+
+  &__add,
+  &__edit,
+  &__remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Embed, sans-serif;
+    font-size: 10px;
+    width: 90px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 4px;
+    cursor: pointer;
+  }
+
+  &__add {
+    border: 3px solid #83e483;
+
+    &:hover {
+      background: #83e483;
+    }
+  }
+
+  &__added {
+    width: 90px;
+    height: 40px;
+    font-family: Embed, sans-serif;
+    font-size: 10px;
+    border-radius: 12px;
+    padding: 4px;
+    cursor: pointer;
+    border: none;
+    background: #83e483;
+
+  }
+  &__edit {
+    border: 3px solid #00baff;
+
+    &:hover {
+      background: #00baff;
+    }
+  }
+
+  &__edit[disabled] {
+    cursor: not-allowed;
+  }
+  &__remove {
+    border: 3px solid #ffacac;
+
+    &:hover {
+      background: #ffacac;
+    }
+  }
+
+  &__remove[disabled] {
+    cursor: not-allowed;
+  }
+}

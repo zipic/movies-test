@@ -1,0 +1,35 @@
+.finder {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(248, 248, 248, 0.796);
+
+  &__img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+  }
+
+  &__search {
+    width: 100%;
+    max-width: 800px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-family: Embed, sans-serif;
+    font-size: 15px;
+    padding-left: 20px;
+    background-color: #e7e7e7;
+    font-size: 21px;
+
+    @media screen and (min-width: 705px) and (max-width: 1091px) {
+      width: 70%;
+    }
+  
+    @media screen and (max-width: 705px) {
+      width: 50%;
+    }
+  }
+}
